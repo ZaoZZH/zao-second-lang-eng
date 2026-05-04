@@ -77,7 +77,7 @@ async function generateEnglishReply(
 }
 
 async function synthesizeAudio(minimaxKey: string, voiceId: string, text: string) {
-  // Use an English-capable MINIMAX_VOICE_ID for best results (Cantonese-tuned voices may sound off).
+  // Use an English-capable MINIMAX_Gerald_Eng_VOICE_ID for best results (Cantonese-tuned voices may sound off).
   const payload = {
     model: "speech-2.8-turbo",
     text,
@@ -129,7 +129,7 @@ export async function POST(request: NextRequest) {
   try {
     const geminiApiKey = process.env.GEMINI_API_KEY;
     const minimaxApiKey = process.env.MINIMAX_API_KEY;
-    const minimaxVoiceId = process.env.MINIMAX_VOICE_ID;
+    const minimaxVoiceId = process.env.MINIMAX_Gerald_Eng_VOICE_ID;
     if (!geminiApiKey || !minimaxApiKey || !minimaxVoiceId) {
       return NextResponse.json(
         { error: "Missing required environment variables on server." },

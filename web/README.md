@@ -19,7 +19,7 @@ cp .env.example .env.local
 3. Fill `.env.local` with:
 - `GEMINI_API_KEY`
 - `MINIMAX_API_KEY`
-- `MINIMAX_VOICE_ID`
+- `MINIMAX_Gerald_Eng_VOICE_ID`
 
 4. Run dev server:
 
@@ -41,6 +41,6 @@ npm run dev
 Set the same three env vars in Vercel Project Settings:
 - `GEMINI_API_KEY`
 - `MINIMAX_API_KEY`
-- `MINIMAX_VOICE_ID`
+- `MINIMAX_Gerald_Eng_VOICE_ID`
 
 Then deploy the `web` directory as the Next.js project root.
