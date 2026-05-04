@@ -76,7 +76,7 @@ export default function Home() {
       <div className="mx-auto flex w-full max-w-xl flex-col gap-4">
         <Card>
           <CardHeader>
-            <CardTitle>What do you want to say to Gerald (Zao)?</CardTitle>
+            <CardTitle>What do you want to say to Gerald?</CardTitle>
           </CardHeader>
           <CardContent>
             <form className="space-y-3" onSubmit={handleGenerate}>
